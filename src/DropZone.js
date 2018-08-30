@@ -1,4 +1,3 @@
-// This is the source file, from this all version will be built.
 ;(function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :

@@ -1,6 +1,6 @@
 {
   "name": "dropzone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple js DropZone package with no upload functionality",
   "main": "DropZone.js",
   "scripts": {

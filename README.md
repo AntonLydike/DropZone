@@ -1,17 +1,19 @@
 # DropZone
 A simple js DropZone package with no upload functionality
 
-[Demo](https://antonlydike.github.io/DropZone/demo/);
+[Demo](https://antonlydike.github.io/DropZone/demo/)
 
 ## Usage
 
 ### Completed Scripts:
 
-DropZone uses promises, so make sure to include a [promise polyfill](https://github.com/taylorhakes/promise-polyfill).
+DropZone uses promises, so make sure to include a [promise polyfill](https://github.com/taylorhakes/promise-polyfill) or use a dropin ready version.
 
- - [ES6 version](src/dropzone.es6.js)
- - [ES5 version](src/dropzone.es5.js)
- - [ES5 minified](src/dropzone.es5.min.js)
+ - [ES5 version](build/dropzone.es5.js)
+ - [ES5 minified](build/dropzone.es5.min.js)
+ - [ES5 dropin version](build/dropzone.es5.dropin.js) (with polyfill)
+ - [ES5 dropin minified](build/dropzone.es5.dropin.min.js) (with polyfill)
+ - [ES6 version](build/dropzone.es6.js)
 
 You can link them in the index.html, or require them:
 

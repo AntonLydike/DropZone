@@ -1,6 +1,6 @@
 /**
  * DropZone (no upload) COPYRIGHT (c) by Anton Lydike
- * v1.0.0
+ * v1.0.1
  *
  * https://github.com/AntonLydike/DropZone
  */
@@ -8,7 +8,6 @@
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-// This is the source file, from this all version will be built.
 ;
 
 (function (global, factory) {

@@ -1,10 +1,9 @@
 /**
  * DropZone (no upload) COPYRIGHT (c) by Anton Lydike
- * v1.0.0
+ * v1.0.1
  *
  * https://github.com/AntonLydike/DropZone
  */
-// This is the source file, from this all version will be built.
 ;(function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
