@@ -1,6 +1,8 @@
 # DropZone
 A simple js DropZone package with no upload functionality
 
+[Demo](https://antonlydike.github.io/DropZone/demo/);
+
 ## Usage
 
 ### Completed Scripts:
@@ -25,6 +27,15 @@ const elm = document.querySelector('#dropzone');
 const handle = DropZone(elm, {
   callback(files) {
     console.log(files);
+
+    Array.from(files).forEach(file => {
+      // read text content (could aslo be binary or dataurl to display images, etc...)
+      file.read('text').then(text => {
+        console.log(text);
+      }).catch(err => {
+        console.error(err);
+      })
+    })
   },
   clickable: true // make the zone clickable for a file dialog
 })
