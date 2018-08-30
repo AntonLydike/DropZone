@@ -3,6 +3,20 @@ A simple js DropZone package with no upload functionality
 
 ## Usage
 
+### Completed Scripts:
+
+DropZone uses promises, so make sure to include a [promise polyfill](https://github.com/taylorhakes/promise-polyfill).
+
+ - [ES6 version](src/dropzone.es6.js)
+ - [ES5 version](src/dropzone.es5.js)
+ - [ES5 minified](src/dropzone.es5.min.js)
+
+You can link them in the index.html, or require them:
+
+````js
+const DropZone = require('./path/to/dropzone.js');
+````
+
 ### Basic Usage: `handle = DropZone(node, options);`
 
 ````js
