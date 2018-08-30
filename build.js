@@ -72,8 +72,12 @@ babel_make_es5(header, SOURCE, target.es5).then((es5code) => {
 
       console.log("es5 min done");
     });
+  });
 
-    fs.writeFile(target.es5min, header + polyfill + es5min, 'utf8', (err) => {
+  minify.js(polyfill + es5code, (err, es5min) => {
+    if (err) throw err;
+
+    fs.writeFile(target.es5min_dropin, header + es5min, 'utf8', (err) => {
       if (err) throw err;
 
       console.log("es5 dropin min done");
