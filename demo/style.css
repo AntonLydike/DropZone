@@ -1,0 +1,74 @@
+body {
+  background: #ddd;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+*:focus {
+  outline: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+.wrapper {
+  background: #fff;
+  width: 400px;
+  margin: 32px auto;
+  padding: 16px;
+  text-align: center;
+}
+.drop-zone {
+  height: 300px;
+  border: 4px dashed #555;
+  border-radius: 10px;
+  transition: .3s;
+}
+.drop-zone .hover-text {
+  color: #aaa;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 80px;
+  transition: .3s;
+}
+.drop-zone.clickable {
+  cursor: pointer;
+}
+.drop-zone.state-hover,
+.drop-zone.clickable:hover {
+  border-color: #4286f4;
+}
+.drop-zone.state-hover .hover-text,
+.drop-zone.clickable:hover .hover-text {
+  color: #4286f4;
+}
+.list {
+  text-align: left;
+}
+.list li {
+  padding: 12px 0;
+}
+button {
+  border: 1px solid #999;
+  color: #555;
+  background: transparent;
+  border-radius: 3px;
+  padding: 5px 12px;
+  transition: .3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  float: right;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.footer {
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+}
+a {
+  color: #4286f4;
+  text-decoration: none;
+}
