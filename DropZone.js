@@ -84,7 +84,7 @@
     input.addEventListener('change', onDragDrop, false);
 
     if (options.clickable) {
-      element.classList.add('clickable');
+      element.classList.add('dropzone-clickable');
 
       element.addEventListener('click', () => {
         input.click();
@@ -154,6 +154,7 @@
 
               switch(as.toLowerCase()) {
                 case 'text':
+                case 'string':
                   reader.readAsText(file, encoding)
                   break;
                 case 'dataurl':

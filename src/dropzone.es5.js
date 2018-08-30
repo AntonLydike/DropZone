@@ -1,6 +1,6 @@
 /**
- * DropZone (no upload) by Anton Lydike
- * COPYRIGHT (c) by Anton Lydike
+ * DropZone (no upload) COPYRIGHT (c) by Anton Lydike
+ * v1.0.0
  *
  * https://github.com/AntonLydike/DropZone
  */
@@ -91,7 +91,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     input.addEventListener('change', onDragDrop, false);
 
     if (options.clickable) {
-      element.classList.add('clickable');
+      element.classList.add('dropzone-clickable');
       element.addEventListener('click', function () {
         input.click();
       }, false);
@@ -180,6 +180,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
               switch (as.toLowerCase()) {
                 case 'text':
+                case 'string':
                   reader.readAsText(file, encoding);
                   break;
 

@@ -1,6 +1,6 @@
 /**
- * DropZone (no upload) by Anton Lydike
- * COPYRIGHT (c) by Anton Lydike
+ * DropZone (no upload) COPYRIGHT (c) by Anton Lydike
+ * v1.0.0
  *
  * https://github.com/AntonLydike/DropZone
  */
@@ -90,7 +90,7 @@
     input.addEventListener('change', onDragDrop, false);
 
     if (options.clickable) {
-      element.classList.add('clickable');
+      element.classList.add('dropzone-clickable');
 
       element.addEventListener('click', () => {
         input.click();
@@ -160,6 +160,7 @@
 
               switch(as.toLowerCase()) {
                 case 'text':
+                case 'string':
                   reader.readAsText(file, encoding)
                   break;
                 case 'dataurl':

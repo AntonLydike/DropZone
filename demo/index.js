@@ -2,6 +2,8 @@ var list = document.querySelector('.list');
 
 DropZone(document.querySelector('.drop-zone'), {
   callback: function callback(files) {
+    console.log(files);
+
     Array.prototype.forEach.call(files, function (file) {
       var li = document.createElement('li');
       li.innerHTML = '<b>' + file.name + '</b> - ' + file.size.short + ' <button>read text</button>';

@@ -1,6 +1,6 @@
 /**
- * DropZone (no upload) by Anton Lydike
- * COPYRIGHT (c) by Anton Lydike
+ * DropZone (no upload) COPYRIGHT (c) by Anton Lydike
+ * v1.0.0
  *
  * https://github.com/AntonLydike/DropZone
  */

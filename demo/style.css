@@ -31,15 +31,15 @@ h3 {
   padding-top: 80px;
   transition: .3s;
 }
-.drop-zone.clickable {
+.drop-zone.dropzone-clickable {
   cursor: pointer;
 }
 .drop-zone.state-hover,
-.drop-zone.clickable:hover {
+.drop-zone.dropzone-clickable:hover {
   border-color: #4286f4;
 }
 .drop-zone.state-hover .hover-text,
-.drop-zone.clickable:hover .hover-text {
+.drop-zone.dropzone-clickable:hover .hover-text {
   color: #4286f4;
 }
 .list {
